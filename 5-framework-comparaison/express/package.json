@@ -1,0 +1,16 @@
+{
+  "name": "mkutano-2025-demo",
+  "version": "1.0.0",
+  "main": "express.js",
+  "scripts": {
+    "start": "DEBUG=express:* nodemon express.js -- --port=3000"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

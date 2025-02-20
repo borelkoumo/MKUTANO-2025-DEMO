@@ -7,32 +7,28 @@ app.use(express.json())
 const uri = 'mongodb://localhost:27020/mongoose-vs-native-driver-native'
 const client = new MongoClient(uri)
 
-let db
-client
-    .connect()
-    .then(() => {
-        db = client.db()
-        console.log('Connected to MongoDB')
-    })
-    .catch((err) => {
-        console.error(' MongoDB connection error:', err)
-        process.exit(1)
-    })
-
 // Route pour ajouter une personne
 app.post('/persons', async (req, res) => {
     try {
+        // trop de connexions ouvertes et fermées rapidement
+        // si plusieurs requêtes arrivent en même temps, l’application ralentit ou plante.
+        await client.connect()
+        const db = client.db()
+        console.log('Connected to MongoDB')
+        
         // Création et sauvegarde d'une nouvelle personne
         const { civility, name, age } = req.body
         const result = await db.collection('persons').insertOne({ civility, name, age })
 
         // Retourner l'objet inséré
-        return res.status(200).json({
+        res.status(200).json({
             message: 'Person created successfully',
             data: {
                 _id: result.insertedId
             },
         })
+
+        client.close()
     } catch (error) {
         return res.status(500).json({ message: `Error saving person ${error.message}` })
     }

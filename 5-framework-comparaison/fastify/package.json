@@ -1,0 +1,17 @@
+{
+  "name": "mkutano-2025-demo",
+  "version": "1.0.0",
+  "main": "fastify.js",
+  "scripts": {
+    "start": "DEBUG=fastify:* nodemon fastify.js -- --port=6000"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "nodemon": "^3.1.9"
+  }
+}

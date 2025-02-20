@@ -1,0 +1,19 @@
+{
+  "name": "6-jwt-caching",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:servernoauth": "DEBUG=express:* nodemon server-no-auth.js -- --port=3000",
+    "start:serverjwt": "DEBUG=express:* nodemon server-jwt.js -- --port=6000",
+    "start:serverjwtcache": "DEBUG=express:* nodemon server-jwt-cache.js -- --port=9000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9"
+  }
+}

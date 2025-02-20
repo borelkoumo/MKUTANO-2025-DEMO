@@ -1,0 +1,18 @@
+{
+  "name": "mongoose-vs-native-driver",
+  "version": "1.0.0",
+  "scripts": {
+    "start:mongoose": "DEBUG=express:* nodemon mongoose-server.js -- --port=3000",
+    "start:native": "DEBUG=express:* nodemon native-server.js -- --port=5000"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
+  }
+}
