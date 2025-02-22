@@ -9,7 +9,6 @@ fastify.get('/', (request, reply) => {
 
 fastify.listen({ port: Number(PORT) }, (err, address) => {
     if (err) {
-        console.error(err)
         process.exit(1)
     }
     console.log(`Server started on port ${PORT}`)

@@ -2,8 +2,8 @@
   "name": "mkutano-2025-demo",
   "version": "1.0.0",
   "scripts": {
-    "start:before": "DEBUG=express:* nodemon server-with-stringify.js -- --port=3000",
-    "start:after": "DEBUG=express:* nodemon server-with-fast-json.js -- --port=6000"
+    "start:withstringify": "DEBUG=express:* nodemon server-with-stringify.js -- --port=3000",
+    "start:withfastjson": "DEBUG=express:* nodemon server-with-fast-json.js -- --port=6000"
   },
   "type": "commonjs",
   "keywords": [],

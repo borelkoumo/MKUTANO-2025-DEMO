@@ -20,7 +20,7 @@ function authenticateJWT(req, res, next) {
     });
 }
 
-app.get('/decode', authenticateJWT, (req, res) => {
+app.get('/', authenticateJWT, (req, res) => {
     res.status(200).json({...req.user });
 });
 

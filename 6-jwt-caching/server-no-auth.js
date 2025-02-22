@@ -9,7 +9,7 @@ const person = {
     email: 'paulbiya@gmail.com'
 }
 
-app.get('/decode', (req, res) => {
+app.get('/', (req, res) => {
     res.json(person);
 });
 

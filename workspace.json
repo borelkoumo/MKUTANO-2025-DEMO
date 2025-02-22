@@ -1,0 +1,52 @@
+{
+  "id": "14bfe8ff-8ee2-4689-ba4e-9ab30f383862",
+  "locale": "fr-fr",
+  "newsletterOptin": false,
+  "submissionDate": "2025-02-20T13:10:23.324Z",
+  "submissionDateTime": "2025-02-20T13:10:23.324Z",
+  "dateOfPurchase": "2025-02-12",
+  "proofOfPurchase": {
+    "invoice": {
+      "url": "https://lab-assets-storage-staging.dev-dcadcx.michelin.fr/files/11153077714d8479.jpg",
+      "number": ""
+    }
+  },
+  "productLineActivity": "4W",
+  "tires": [
+    {
+      "quantity": "4",
+      "diameter": "14",
+      "model": "4X4 DIAMARIS",
+      "brand": "Michelin",
+      "type": "Auto",
+      "family": "DIAMARIS",
+      "season": "SUMMER"
+    }
+  ],
+  "dealer": {
+    "name": "EURO STAR GROUP",
+    "retailer": "EURO STAR GROUP",
+    "location": {
+      "address": "STR GARII NR 2BIS 510002 ALBA IULIA",
+      "city": "ALBA IULIA",
+      "zipcode": "510194"
+    }
+  },
+  "user": {
+    "civility": "mr",
+    "firstname": "Borello",
+    "lastname": "Borelli",
+    "email": "borello-borelli@yopmail.com",
+    "location": {
+      "address": "takou",
+      "zipcode": "69006",
+      "city": "Lyon"
+    }
+  },
+  "campaign": {
+    "name": "Account"
+  },
+  "reward": {},
+  "oneMichelinId": "005bg000005e085AAA",
+  "aposEnvironment": "review"
+}
